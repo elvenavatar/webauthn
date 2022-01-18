@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	p "github.com/elvenavatar/protocol"
+	p "github.com/elvenavatar/webauthn/protocol"
 )
 
 func TestAuthenticator_UpdateCounter(t *testing.T) {
