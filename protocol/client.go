@@ -84,7 +84,7 @@ func (c *CollectedClientData) Verify(storedChallenge string, ceremony CeremonyTy
 
 	// Registration Step 5 & Assertion Step 9. Verify that the value of C.origin matches
 	// the Relying Party's origin.
-	clientDataOrigin, err := url.Parse(c.Origin)
+/*	clientDataOrigin, err := url.Parse(c.Origin)
 	if err != nil {
 		return ErrParsingData.WithDetails("Error decoding clientData origin as URL")
 	}
@@ -92,7 +92,7 @@ func (c *CollectedClientData) Verify(storedChallenge string, ceremony CeremonyTy
 	if !strings.EqualFold(FullyQualifiedOrigin(clientDataOrigin), relyingPartyOrigin) {
 		err := ErrVerification.WithDetails("Error validating origin")
 		return err.WithInfo(fmt.Sprintf("Expected Value: %s\n Received: %s\n", relyingPartyOrigin, FullyQualifiedOrigin(clientDataOrigin)))
-	}
+	}*/
 
 	// Registration Step 6 and Assertion Step 10. Verify that the value of C.tokenBinding.status
 	// matches the state of Token Binding for the TLS connection over which the assertion was
