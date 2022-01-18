@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/binary"
 	"fmt"
-	"github.com/duo-labs/webauthn/protocol/webauthncbor"
+	"github.com/elvenavatar/webauthn/protocol/webauthncbor"
 )
 
 var minAuthDataLength = 37
